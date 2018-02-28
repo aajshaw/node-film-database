@@ -3,15 +3,15 @@ create table films (
   name text not null unique
 );
 
-create table franchises (
+create table collections (
   id integer primary key autoincrement,
   name text not null unique
 );
 
-create table franchise_films (
-  franchise_id integer,
+create table collection_films (
+  collection_id integer,
   film_id integer
 );
 
-create unique index idx_franchise_film
-  on franchise_films (franchise_id, film_id);
+create unique index idx_collection_film
+  on collection_films (collection_id, film_id);

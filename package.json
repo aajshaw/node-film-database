@@ -4,6 +4,7 @@
   "description": "SQLite database of films exposed via a web interface",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,10 @@
   },
   "homepage": "https://github.com/aajshaw/node-film-database#readme",
   "dependencies": {
+    "express": "^4.16.2",
+    "handlebars": "^4.0.11",
+    "hbs": "^4.0.1",
+    "sqlite": "^2.9.1",
     "sqlite3": "^3.1.13"
   }
 }
